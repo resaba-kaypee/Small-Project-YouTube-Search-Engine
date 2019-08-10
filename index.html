@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="./dist/jquery.fancybox.min.css">
+  <script src="../components/bootstrap-4.3.1-dist/js/jquery-3.4.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.fancybox').fancybox();
+    })
+  </script>
+  <script src="script.js" defer></script>
+  <title>Search Engine</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Search <span>Engine</span></h1>
+      <p>Search YouTube Videos</p>
+    </header>
+    <section>
+      <form id="search-form">
+        <div class="field-container">
+          <input type="search" id="query" class="search-field" placeholder="Search videos...">
+          <button type="submit" id="search-btn"></button>
+        </div>
+      </form>
+
+      <ul id="results">
+      </ul>
+      <div id="button">
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &copy; 2019, All rights reserve.</p>
+    </footer>
+  </div>
+
+  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="./dist/jquery.fancybox.min.js"></script>
+</body>
+</html>
